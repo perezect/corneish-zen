@@ -13,20 +13,17 @@
 #define NUM 1
 #define SYM 2
 
+&mt {
+        tapping-term-ms = <180>;
+        flavor = "balanced";
+};
+
+&lt {
+        tapping-term-ms = <180>;
+        flavor = "balanced";
+};
+
 / {
-        behaviors {
-                ft: felix_tap {
-                    compatible = "zmk,behavior-hold-tap";
-                    label = "F_TAP";
-                    #binding-cells = <2>;
-                    tapping-term-ms = <180>;
-                    quick_tap_ms = <0>;
-                    flavor = "balanced";
-                    bindings = <&kp>, <&kp>;
-                };
-        };
-
-
         keymap {
                 compatible = "zmk,keymap";
 
